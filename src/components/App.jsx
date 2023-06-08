@@ -16,13 +16,13 @@ function App() {
     const option = evt.target.id;
 
     if (option === 'good') {
-      setGood(good + 1);
+      setGood(state => state + 1);
     }
     if (option === 'neutral') {
-      setNeutral(neutral + 1);
+      setNeutral(state => state + 1);
     }
     if (option === 'bad') {
-      setBad(bad + 1);
+      setBad(state => state + 1);
     }
   };
 
